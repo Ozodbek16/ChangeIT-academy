@@ -1,0 +1,15 @@
+<link rel="stylesheet" href="/css/admin-log.css" />
+
+<div class="login-page">
+  <div class="form">
+    <h1>{{title}}</h1>
+    <form class="login-form" action="/admin/login" method="post">
+      {{#if error}}
+        <p style="color: red;">{{error}}</p>
+      {{/if}}
+      <input type="text" name="name" placeholder="username" required />
+      <input type="password" name="password" placeholder="password" required />
+      <button type="submit">Login</button>
+    </form>
+  </div>
+</div>

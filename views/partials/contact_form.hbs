@@ -1,0 +1,22 @@
+<link rel="stylesheet" href="/css/contact_form.css">
+<section class="form2">
+    <div class="form2_container">
+        <div class="form2_info">
+            <div class="form2_info_title">
+                <div class="form2_info_title_in">
+                    <img src="/img/whiteArrow.svg" alt="" />
+                    <p class="form2_info_title_in_no_change">{{coworking.first}}</p>
+                    <p class="form2_info_title_in_change"></p>
+                </div>
+                <span class="first">{{coworking.second}}</span>
+                <span class="second"></span>
+            </div>
+        </div>
+        <form method="post" action="/contact/user-contact">
+            <input type="text" placeholder="{{contact.right_form_form_name_input}}" name="name" required />
+            <input type="tel" name="phone" maxlength="13"  
+ maxlength="8" placeholder="{{contact.right_form_form_phone_input}}" required />
+            <button>{{coworking.form_submit_btn}}</button>
+        </form>
+    </div>
+</section>

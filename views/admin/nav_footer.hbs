@@ -1,0 +1,36 @@
+<link rel="stylesheet" href="/css/edit_text.css">
+<div class="dash">
+    {{#if error}}
+    <p style="color: red;">{{error}}</p>
+    {{/if}}
+        <form action="/admin/edit/foot_nav/{{nav.id}}/number" method="post">
+        <label for="number">Raqam</label>
+        <input type="text" name="number" id="number" value="{{nav.number}}">
+        <button type="submit">send</button>
+        </form>
+        <form action="/admin/edit/foot_nav/{{nav.id}}/courses" method="post">
+        <label for="courses">Kurslar</label>
+        <input type="text" name="courses" id="courses" value="{{nav.courses}}">
+        <button type="submit">send</button>
+        </form>
+        <form action="/admin/edit/foot_nav/{{nav.id}}/coworking" method="post">
+        <label for="coworking">Koworking</label>
+        <input type="text" name="coworking" id="coworking" value="{{nav.coworking}}">
+        <button type="submit">send</button>
+        </form>
+        <form action="/admin/edit/foot_nav/{{nav.id}}/contacts" method="post">
+        <label for="contacts">Kontaktlar</label>
+        <input type="text" name="contacts" id="contacts" value="{{nav.contacts}}">
+        <button type="submit">send</button>
+        </form>
+        <form action="/admin/edit/foot_nav/{{nav.id}}/request" method="post">
+          <label for="request">Zayavkalar</label>
+        <input type="text" name="request" id="request" value="{{nav.request}}">
+        <button type="submit">send</button>
+        </form>      
+        <form action="/admin/edit/foot_nav/{{nav.id}}/open_lessons" method="post">
+            <label for="open_lessons">Ochiq darslar</label>
+        <input type="text" name="open_lessons" id="open_lessons" value="{{nav.open_lessons}}">
+        <button type="submit">send</button>
+        </form>
+</div>

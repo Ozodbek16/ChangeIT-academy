@@ -1,0 +1,1023 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;0,700;0,900;1,400&display=swap");
+
+:root {
+  --black: #242424;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+}
+
+body {
+  font-family: "Roboto";
+}
+
+.container {
+  width: 1142px;
+  margin: auto;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  margin: auto;
+}
+
+.course_about .row {
+  display: flex;
+  flex-wrap: wrap;
+  margin: auto;
+}
+
+.f_column {
+  flex-direction: column;
+}
+
+.container-fluid {
+  width: 100%;
+  margin: auto;
+}
+
+.justify_content_between {
+  justify-content: space-between;
+}
+
+.justify_content_center {
+  justify-content: center;
+}
+
+.align_items_center {
+  align-items: center;
+}
+
+.align_items_start {
+  align-items: start;
+}
+
+.hero_info_title {
+  align-self: center;
+}
+
+.hero_info {
+  width: 54.8%;
+  margin-top: 10.5%;
+}
+
+.hero_info_line {
+  width: 1px;
+  height: 50px;
+  background: #fff;
+}
+
+.hero_title {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 46px;
+  line-height: 125%;
+  text-align: center;
+  color: #ffffff;
+  margin-bottom: 3.5%;
+}
+
+.hero_info_button {
+  padding: 15px 41px;
+  border: none;
+  background: #ffffff;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 150%;
+  text-align: center;
+  text-transform: uppercase;
+  color: #242424;
+}
+
+.hero_info_text_about {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 130%;
+  color: #ffffff;
+  margin-bottom: 7%;
+}
+
+.hero_info_text_about_value {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 130%;
+  color: #ffffff;
+}
+
+.hero_info_info {
+  margin-top: 13%;
+  margin-bottom: 8.5%;
+}
+
+header {
+  align-items: normal;
+  padding: 0;
+}
+
+/*  */
+
+.course_about {
+  margin-top: 3.5%;
+}
+
+.course_about_info_text {
+  width: 48.7%;
+}
+
+.course_about_info {
+  max-width: 100%;
+  padding: 0;
+}
+
+.course_about_info p {
+  color: var(--black);
+}
+
+.course_about_info_text_title {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 42px;
+  line-height: 130%;
+  color: var(--black);
+  margin-bottom: 5%;
+}
+
+.course_about_info_text_text {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+  color: var(--black);
+  margin-bottom: 5%;
+}
+
+.course_about_info_text_btn {
+  background: #1e1e1e;
+  padding: 14px 57px;
+  border: none;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 150%;
+  text-align: center;
+  text-transform: uppercase;
+  color: #fcfcfc;
+}
+
+/*  */
+
+.for_people {
+  margin-top: 3.3%;
+}
+
+.for_people_title {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 42px;
+  line-height: 150%;
+  color: var(--black);
+  margin-bottom: 4.5%;
+}
+
+.for_people_card {
+  margin-bottom: 5.4%;
+  position: relative;
+}
+
+.for_people_card::before {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 1px;
+  background-color: #efefef;
+  position: absolute;
+  bottom: -30%;
+}
+
+.for_people_card:last-child::before {
+  display: none;
+}
+
+.for_people_card:last-child {
+  margin-bottom: 0;
+}
+
+.for_people_card_info {
+  width: 59.1%;
+}
+
+.level_of_people_text {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 150%;
+  color: var(--black);
+}
+
+.level_of_people_text span {
+  color: #c5c5c5;
+  margin-right: 10px;
+}
+
+.for_people_card_info_text {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 150%;
+  color: var(--black);
+}
+
+/*  */
+
+.learn_title {
+  margin-top: 11%;
+  margin-bottom: 13%;
+}
+
+.learn_card_info {
+  width: 40.5%;
+}
+
+.learn_card_info:nth-child(odd) {
+  margin-right: 1%;
+}
+
+.learn_card {
+  margin-top: 2%;
+}
+
+.learn_card:nth-child(odd) {
+  flex-direction: row-reverse;
+}
+
+.learn_card:nth-child(2) {
+  margin-top: 0;
+}
+
+.learn_card_info_text {
+  width: 87%;
+}
+
+.learn_card_img:nth-child(odd) {
+  margin-right: 2.8%;
+}
+
+.learn_card_row {
+  margin-top: 7px;
+  margin-right: 3%;
+}
+
+.learn_card_info_text_title {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 150%;
+  color: #000000;
+  margin-bottom: 6%;
+}
+
+.learn_card_info_text_text {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 150%;
+  color: var(--black);
+}
+
+.learn_btn {
+  margin-top: 23%;
+}
+
+.learn_btn_btn {
+  background: #1e1e1e;
+  padding: 14px 57px;
+  border: none;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 150%;
+  text-align: center;
+  text-transform: uppercase;
+  color: #fcfcfc;
+  margin-right: 28px;
+}
+
+/*  */
+
+.money {
+  margin-top: 3.5%;
+}
+
+.money_value {
+  width: 40.7%;
+  background: rgba(255, 255, 255, 0.2);
+  padding: 214px 137px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.money_value_text_title {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 65px;
+  line-height: 130%;
+  text-align: center;
+  color: #ffffff;
+  margin-bottom: 3%;
+}
+
+.money_value_text_text {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+  text-align: center;
+  color: #ffffff;
+}
+
+.money_vakansy {
+  width: 59.3%;
+  padding: 159px 33px 159px 148px;
+}
+
+.money_vakansy_text {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 150%;
+  color: #ffffff;
+}
+
+/*  */
+
+.level_of_teching {
+  margin-top: 3.5%;
+}
+
+.level_of_teaching_ul_item {
+  list-style: initial !important;
+}
+
+.level_of_teaching_title {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 42px;
+  line-height: 150%;
+  color: var(--black);
+  margin-bottom: 4.9%;
+}
+
+.level_of_teaching_ul {
+  padding-left: 2.3%;
+  width: 100%;
+}
+
+.level_of_teaching_ul_item {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 150%;
+  color: #000000;
+  margin-bottom: 41px;
+  width: 100%;
+  position: relative;
+}
+
+.level_of_teaching_ul_item::after {
+  content: "";
+  display: block;
+  position: absolute;
+  top: -81%;
+  width: 102%;
+  height: 1px;
+  background: #efefef;
+  transform: translateX(-2%);
+}
+
+.level_of_teaching_ul_item:last-child::before {
+  content: "";
+  display: block;
+  position: absolute;
+  bottom: -81%;
+  width: 102%;
+  height: 1px;
+  background: #efefef;
+  transform: translateX(-2%);
+}
+
+/*  */
+.consultation {
+  background: var(--black);
+  padding: 60px 0 73px 0;
+  margin-top: 2%;
+}
+
+.container_consultation {
+  width: 1340px;
+  margin: auto;
+}
+
+.consultation_info {
+  width: 31%;
+}
+
+.consultation_info_title {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 130%;
+  color: #ffffff;
+  margin-left: 10px;
+}
+
+.consultation_info_text {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+  color: #ffffff;
+}
+
+.consultation_info_top {
+  margin-bottom: 3%;
+}
+
+.consultation_form {
+  width: 68%;
+}
+
+.consultation_form input {
+  padding: 13px 17px;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+  color: #fdfdfd;
+  background: transparent;
+  border: 1px solid #fff;
+  margin-right: 3.1%;
+  width: 35%;
+}
+
+.consultation_form button {
+  background: #fdfdfd;
+  border: none;
+  padding: 13px 62px;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+  color: var(--black);
+}
+
+@media (max-width: 1340px) {
+  .container {
+    width: 992px;
+  }
+
+  .container_consultation {
+    width: 95vw;
+  }
+
+  .consultation_form input {
+    margin-right: 0.1%;
+  }
+}
+
+@media (max-width: 1330px) {
+  .aling_consultation {
+    justify-content: center;
+  }
+
+  .level_of_people_text {
+    font-size: 22px;
+  }
+
+  .money_vakansy {
+    padding: 85px 33px 120px 110px;
+  }
+
+  .money_value {
+    padding: 85px 33px;
+  }
+}
+
+@media (max-width: 1050px) {
+  .container {
+    width: 700px;
+  }
+
+  .hero_info {
+    width: 686px;
+    margin-top: 17.5%;
+  }
+
+  .hero_title {
+    margin-bottom: 2.8%;
+  }
+
+  .hero_info_button {
+    padding: 14px 36px;
+  }
+
+  .hero_info_info {
+    margin-top: 5%;
+    margin-bottom: 7.2%;
+  }
+
+  .hero_info_line {
+    height: 46px;
+  }
+
+  .course_about_info_img {
+    width: 274px;
+  }
+
+  .course_about_info_img img {
+    width: 100%;
+  }
+
+  .course_about_info_text_title {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+
+  .course_about {
+    margin-top: 30px;
+  }
+
+  .course_about_info_text {
+    width: 56.7%;
+    padding-top: 23px;
+  }
+
+  .course_about_info_text_text {
+    margin-bottom: 30px;
+  }
+
+  .course_about_info {
+    align-items: flex-start;
+  }
+
+  .for_people_title {
+    font-size: 24px;
+    padding-right: 90px;
+  }
+
+  .for_people {
+    margin-top: 30px;
+  }
+
+  .level_of_people_text {
+    font-size: 18px;
+  }
+
+  /* .level_of_people_text span{
+    margin-right: 8px;
+  } */
+  .level_of_people_text p {
+    width: 75%;
+  }
+
+  .for_people_card_info {
+    width: 65.2%;
+  }
+
+  .level_of_people {
+    width: 27%;
+  }
+
+  .level_of_people_text span {
+    margin-right: 7px;
+  }
+
+  .for_people_card_info_text_first {
+    font-size: 16px;
+  }
+
+  .for_people_card::before {
+    bottom: -20px;
+  }
+
+  .learn_title {
+    padding-left: 120px;
+    margin-top: 12%;
+    margin-bottom: 30px;
+  }
+
+  .learn_card_img {
+    width: 335px;
+  }
+
+  .learn_card_img img {
+    width: 100%;
+  }
+
+  .learn_card_info_text_title {
+    font-size: 18px;
+    margin-bottom: 10px;
+  }
+
+  .learn_card_info_text_text {
+    font-size: 16px;
+  }
+
+  .learn_card_img:nth-child(odd) {
+    margin-right: 30px;
+  }
+
+  .learn_card_row {
+    margin: 0;
+    margin-right: 5px;
+  }
+
+  .learn_card:nth-child(odd) {
+    margin-top: 30px;
+  }
+
+  .learn_card_info:nth-child(odd) {
+    margin-right: 30px;
+  }
+
+  .learn_card {
+    margin-top: 30px;
+  }
+
+  .learn_card_info:nth-child(odd) {
+    margin-top: 15px;
+  }
+
+  .learn_card_info {
+    width: 332px;
+  }
+
+  .mt {
+    margin-bottom: 20px;
+  }
+
+  .mb {
+    margin-top: -30px;
+  }
+
+  .learn_btn {
+    margin-top: 13%;
+  }
+
+  .learn_btn_btn {
+    margin-right: 9px;
+  }
+
+  .money_vakansy_text {
+    font-size: 16px;
+  }
+
+  .money_value_text_title {
+    font-size: 24px;
+  }
+
+  .money_vakansy {
+    padding: 83px 37px;
+  }
+
+  .money_value {
+    width: 38.7%;
+    padding: 123px 62px 123px 40px;
+  }
+
+  .money {
+    margin-top: 30px;
+  }
+
+  .level_of_teching {
+    margin-top: 4.5%;
+  }
+
+  .level_of_teaching_title {
+    margin-bottom: 7.5%;
+  }
+
+  .level_of_teaching_ul_item {
+    margin-bottom: 44px;
+    font-size: 16px;
+  }
+
+  .level_of_teaching_ul {
+    padding-left: 3.3%;
+  }
+
+  .consultation {
+    margin-top: 1.5%;
+    padding: 40px 0 50px 0;
+  }
+
+  .consultation_info {
+    width: 100%;
+    margin-bottom: 3.2%;
+  }
+
+  .consultation_form {
+    width: 100%;
+  }
+
+  .consultation_info_top {
+    justify-content: center;
+    margin-bottom: 2%;
+  }
+
+  .consultation_info_text {
+    width: 65%;
+    text-align: center;
+    margin: auto;
+  }
+
+  .consultation_info_title {
+    font-size: 18px;
+  }
+
+  .aling_consultation {
+    flex-direction: column;
+  }
+
+  .consultation_form input {
+    width: 456px;
+    margin: auto;
+    margin-bottom: 20px;
+  }
+
+  .consultation_form button {
+    width: 456px;
+    margin: auto;
+  }
+}
+
+@media (max-width: 730px) {
+  .container {
+    width: 300px !important;
+  }
+
+  .hero_title {
+    font-size: 18px;
+  }
+
+  .hero_info_button {
+    font-size: 12px;
+    padding: 14px 31px;
+  }
+
+  .hero_info {
+    width: 300px;
+    margin-top: 100px;
+  }
+
+  .hero_title {
+    margin-bottom: 23px;
+  }
+
+  .hero_info_info {
+    margin-top: 58px;
+    align-items: center;
+    justify-content: space-around;
+    margin-bottom: 27px;
+  }
+
+  .hero_info_line {
+    display: none;
+  }
+
+  .hero_info_text {
+    margin-right: 13px;
+    text-align: center;
+  }
+
+  .hero_info_text:last-child {
+    margin-top: 20px;
+    margin-right: 0;
+  }
+
+  .course_about_info_text {
+    width: 98%;
+  }
+
+  .course_about_info_text_title {
+    font-size: 18px;
+    padding-left: 3px;
+    margin-bottom: 20px;
+  }
+
+  .course_about {
+    margin-top: 9px;
+    padding-bottom: 0 !important;
+  }
+
+  .course_about_info_text_text {
+    margin-bottom: 17px !important;
+    padding-bottom: 0 !important;
+  }
+
+  .course_about_info_text_btn {
+    font-size: 12px;
+    padding: 16px 65px;
+  }
+
+  .course_about_info_img {
+    display: none;
+  }
+
+  .for_people_title {
+    font-size: 18px;
+    padding-right: 19px;
+    margin-bottom: 30px;
+  }
+
+  .level_of_people {
+    width: 100%;
+  }
+
+  .level_of_people_text {
+    font-size: 16px;
+    padding-left: 3px;
+    margin-bottom: 15px;
+  }
+
+  .level_of_people_text span {
+    margin-right: 11px;
+  }
+
+  .for_people_card_info {
+    width: 100%;
+  }
+
+  .for_people_card_info_text {
+    font-size: 16px;
+  }
+
+  .for_people_card_info_text_first {
+    font-size: 14px;
+  }
+
+  .for_people_card {
+    margin-bottom: 40px;
+  }
+
+  .level_of_people_text p {
+    width: 86%;
+  }
+
+  .learn_title {
+    width: 100%;
+    padding-right: 7px;
+    padding-left: 0;
+    margin-top: 55px;
+  }
+
+  .learn_card_img:nth-child(odd) {
+    order: 1;
+    margin-right: 0;
+  }
+
+  .learn_card_info:nth-child(odd) {
+    margin-right: 22px;
+  }
+
+  .learn_card_info {
+    width: 95%;
+  }
+
+  .learn_card_row {
+    margin-right: 10px;
+    padding-top: 5px;
+  }
+
+  .learn_card_info_text {
+    width: 86%;
+    margin-bottom: 15px;
+  }
+
+  .learn_card_img {
+    width: 299px;
+  }
+
+  .learn_card:nth-child(odd) {
+    margin-top: 10px;
+    margin-left: 0;
+  }
+
+  .mt {
+    margin-top: 20px;
+    margin-bottom: 0;
+  }
+
+  .mb {
+    margin-top: 18px !important;
+  }
+
+  .learn_btn {
+    margin-top: 26px;
+  }
+
+  .learn_btn_btn {
+    width: 300px;
+    margin: auto;
+  }
+
+  .w_mobile {
+    flex-direction: column;
+  }
+
+  .money_value {
+    width: 100%;
+    padding: 40px 44px 30px;
+    order: 1;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .money_vakansy {
+    width: 100%;
+    padding: 30px 10px;
+  }
+
+  .money_value_text_title {
+    font-size: 65px;
+  }
+
+  .level_of_teching {
+    margin-top: 32px;
+  }
+
+  .level_of_teaching_title {
+    font-size: 18px;
+    margin-bottom: 25px;
+  }
+
+  .level_of_teaching_ul {
+    padding-left: 23px;
+  }
+
+  .level_of_teaching_ul_item {
+    margin-bottom: 31px;
+  }
+
+  .level_of_teaching_ul_item:nth-child(10),
+  .level_of_teaching_ul_item:nth-child(11),
+  .level_of_teaching_ul_item:nth-child(12) {
+    margin-bottom: 20px;
+  }
+
+  .level_of_teaching_ul_item:nth-child(13) {
+    margin-bottom: 15px;
+  }
+
+  .consultation {
+    margin-top: 0;
+    padding-top: 30px;
+  }
+
+  .consultation_info {
+    margin-bottom: 20px;
+  }
+
+  .consultation_info_top {
+    justify-content: start;
+    margin-bottom: 15px;
+  }
+
+  .consultation_info_title {
+    margin-left: 0;
+  }
+
+  .consultation_info_text {
+    width: 100%;
+    text-align: start;
+    margin: 0;
+  }
+
+  .consultation_form input {
+    width: 100%;
+    margin-left: 0;
+    padding: 12px 18px;
+    margin-bottom: 15px;
+  }
+
+  .consultation_form button {
+    width: 100%;
+  }
+
+  .mo {
+    margin: 0;
+  }
+
+  .level_of_teaching_ul_item::after {
+    top: -26%;
+  }
+}

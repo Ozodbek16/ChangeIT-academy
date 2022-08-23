@@ -1,0 +1,428 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  list-style: none;
+  box-sizing: border-box;
+}
+
+header {
+  background: url(/img/Rectangle\ 1.png) !important;
+  height: 580px;
+  background-repeat: no-repeat !important;
+  background-size: cover !important;
+  padding: 0;
+}
+
+footer {
+  margin-top: 0 !important;
+}
+
+.title {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.bottom {
+  display: flex;
+  width: 332px;
+  justify-content: space-between;
+}
+
+header .title h1 {
+  margin-top: 184px;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 46px;
+  line-height: 125%;
+  text-align: center;
+  color: #ffffff;
+}
+
+header .title .bottom {
+  margin-top: 147px;
+}
+
+header .title .bottom span {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 130%;
+  text-align: center;
+  color: #ffffff;
+}
+
+header .title .bottom p {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 130%;
+  text-align: center;
+  color: #ffffff;
+  margin-top: 10px;
+}
+
+.line {
+  /* border: 0.5px solid #ffffff; */
+  width: 0.4px;
+  background: #ffffff;
+}
+
+.home {
+  display: flex;
+  justify-content: space-between;
+}
+
+.home_container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 1380px;
+  margin: auto;
+  margin-top: 26px;
+}
+
+.home_left {
+  overflow: hidden;
+  position: relative;
+  width: 49%;
+}
+
+.home_left_second_img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  top: 20px;
+  left: 18px;
+}
+
+.home_right {
+  width: 49%;
+}
+
+.home_right h3 {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 42px;
+  line-height: 130%;
+  color: #242424;
+  width: 582px;
+  margin-top: 45px;
+}
+
+.home_right p {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+  color: #242424;
+  width: 546px;
+  margin-top: 15px;
+}
+
+.home_right button a {
+  display: block;
+  background: #1e1e1e;
+  padding: 14px 57px;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 150%;
+  text-align: center;
+  text-transform: uppercase;
+  color: #fcfcfc;
+}
+
+.home_right button {
+  border: none;
+  margin-top: 40px;
+}
+
+.premium {
+  width: 1145px;
+  margin: auto;
+  margin-top: 66px;
+}
+
+.premium_botom_item {
+  display: flex;
+  width: 557px;
+  margin-top: 30px;
+  align-items: flex-start;
+}
+
+.premium_botom {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.premium h3 {
+  text-align: center;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 130%;
+  color: #242424;
+  margin-bottom: 20px;
+}
+
+.premium_botom_item_img {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 10px;
+}
+
+.premium_botom_item p {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+  color: #242424;
+}
+
+.home_left_second_img760 {
+  display: none;
+}
+
+br {
+  display: none;
+}
+
+.second {
+  display: none !important;
+}
+
+.first {
+  display: block !important;
+}
+
+@media (max-width: 1360px) {
+  br {
+    display: block;
+  }
+
+  .first {
+    display: none !important;
+  }
+
+  .second {
+    display: block !important;
+  }
+
+  header {
+    background: url(/img/760headerCowo.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 460px;
+  }
+
+  header .title h1 {
+    font-size: 18px;
+    line-height: 125%;
+    margin-top: 155px;
+  }
+
+  header .title .bottom {
+    margin-top: 120px;
+  }
+
+  header .title .bottom span {
+    font-size: 12px;
+    line-height: 130%;
+  }
+
+  .line {
+    display: none;
+  }
+
+  header .title .bottom p {
+    font-size: 16px;
+    line-height: 130%;
+    text-align: center;
+  }
+
+  .right {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .bottom {
+    width: 260px;
+  }
+
+  .home_left_first_img {
+    width: 266.29px;
+    height: 155.84px;
+  }
+
+  .home_left_second_img {
+    display: none;
+  }
+
+  .home_left_second_img760 {
+    display: inline-block;
+    position: absolute;
+    top: 7.71px;
+    left: 7.71px;
+  }
+
+  .home_left {
+    order: 1;
+    width: auto;
+  }
+
+  .home_right h3 {
+    font-size: 18px;
+    line-height: 130%;
+    width: 300px;
+    margin-top: 25px;
+  }
+
+  .home_container {
+    width: 698px;
+    margin-top: 16px;
+  }
+
+  .home_right p {
+    font-size: 16px;
+    line-height: 150%;
+    width: 320px;
+  }
+
+  .home_right button {
+    margin-top: 32px;
+  }
+
+  .premium {
+    margin-top: 40px;
+    width: 700px;
+  }
+
+  .premium h3 {
+    font-size: 16px;
+    line-height: 130%;
+    margin-bottom: 23px;
+  }
+
+  .premium_botom_item_img img {
+    width: 16px;
+  }
+
+  .premium_botom_item {
+    width: 335px;
+    margin-top: 20px;
+  }
+
+  .premium_botom_item:nth-child(1) {
+    order: -2;
+  }
+
+  .premium_botom_item:nth-child(2) {
+    margin-top: -32px;
+  }
+
+  .premium_botom_item:nth-child(3) {
+    order: -1;
+  }
+
+  .premium_botom_item p {
+    font-size: 16px;
+    line-height: 150%;
+  }
+
+  .premium_botom_item_img {
+    margin-right: 5px;
+  }
+}
+
+@media (max-width: 715px) {
+  header {
+    background: url(/img/320headerCowo.png);
+  }
+
+  header .title h1 {
+    margin-top: 160px;
+  }
+
+  .home_container {
+    flex-wrap: wrap;
+    width: 300px;
+  }
+
+  .home_right p {
+    width: 300px;
+    margin-top: 14px;
+  }
+
+  .home_right {
+    width: 100%;
+  }
+
+  .home_right h3 {
+    margin-top: 15px;
+  }
+
+  .home_right button {
+    margin-top: 29px;
+  }
+
+  .home_left {
+    margin-top: 30px;
+    width: 100vw;
+    margin-left: -9px;
+  }
+
+  .home_left_second_img760 {
+    width: 311px;
+  }
+
+  .home_left_first_img {
+    width: 311px;
+    height: 182px;
+  }
+
+  .premium_botom {
+    flex-wrap: wrap;
+  }
+
+  .premium {
+    width: 300px;
+    margin-top: 37px;
+  }
+
+  .premium_botom_item:nth-child(1) {
+    margin-top: 20px;
+  }
+
+  .premium_botom_item:nth-child(2) {
+    margin-top: 20px;
+  }
+
+  .premium_botom_item:nth-child(3) {
+    margin-top: 20px;
+  }
+
+  .premium_botom_item {
+    margin-top: 20px;
+  }
+
+  .premium h3 {
+    text-align: left;
+    margin-bottom: 1px;
+  }
+}

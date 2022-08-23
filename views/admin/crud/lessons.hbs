@@ -1,0 +1,23 @@
+<div class="crud_main">
+    <div class="crud">
+        {{#each lessons}}
+        <div class="crud_item">
+            <h2>{{title}}</h2>
+            <p>{{date}}</p>
+            <a href="/admin/crud/lessons/delete/{{_id}}">Delete</a>
+        </div>
+        {{/each}}
+    </div>
+
+    <form class="crud_form" action="/admin/crud/lessons/addNew" method="post">
+        <h2>Add new</h2>
+        <label for="title">Title</label>
+        <input type="text" name="title" id="title" required>
+        <br>
+
+        <label for="date">Date</label>
+        <input type="datetime-local" name="date" id="date" required>
+        <br>
+        <button type="submit">Send</button>
+    </form>
+</div>

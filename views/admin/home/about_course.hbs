@@ -1,0 +1,41 @@
+<link rel="stylesheet" href="/css/edit_text.css">
+<div class="dash">
+    <div class="about_course1">
+        <form action="/admin/edit/home/{{home.id}}/course_about_info" method="post">
+        <label for="course_about_info">Kurs haqida sarlachasi</label>
+        <input value="{{home.course_about_info}}" type="text" name="course_about_info" id="course_about_info">
+        <button type="submit">send</button>
+        </form>
+        
+        <div class="forms">
+            {{#each home.course_about_info_items}}
+        <form action="/admin/list/edit/home/{{../home.id}}/course_about_info_items/{{id}}" method="post">
+        <div class="course_about_info_items" style="display: flex;flex-direction: column;">
+            <label for="course_about_info_itme_title">Kurs haqida listining sarlavhasi</label>
+            <input type="text" name="course_about_info_itme_title" value="{{course_about_info_itme_title}}"
+                id="course_about_info_itme_title">
+            <label for="course_about_info_itme_text">Kurs haqida listining teksti</label>
+            <textarea name="course_about_info_itme_text" id="course_about_info_itme_text" cols="30" rows="10">{{course_about_info_itme_text}}</textarea>
+            <button type="submit">send</button>
+        </div>
+        </form>
+        {{/each}}
+        </div>
+
+        
+
+        <form action="/admin/edit/home/{{home.id}}/course_about_month" method="post">
+        <label for="course_about_month">Kurs qancha vaqt bo'lishi haqida sarlavha</label>
+        <input value="{{home.course_about_month}}" type="text" name="course_about_month" id="course_about_month">
+        <button type="submit">send</button>
+        </form>
+
+        <form action="/admin/edit/home/{{home.id}}/course_about_month_text" method="post">
+        <label for="course_about_month_text">Kurs qancha vaqt bo'lishi haqida teksti</label>
+        <input value="{{home.course_about_month_text}}" type="text" name="course_about_month_text"
+            id="course_about_month_text">
+        <button type="submit">send</button>
+        </form>
+
+    </div>
+</div>

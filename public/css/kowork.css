@@ -1,0 +1,151 @@
+
+
+.kowork_section {
+  padding: 50px 30px;
+}
+
+.kowork_section_img {
+  width: 57%;
+  position: relative;
+  color: #ffffff;
+}
+
+.kowork_section_img img {
+  width: 100%;
+}
+
+.kowork_section_img_text {
+  position: absolute;
+  top: 33.5%;
+  left: 4.8%;
+}
+
+.kowork_section_img_text_line {
+  width: 323px;
+  height: 1px;
+  background-color: #fff;
+  margin-bottom: 4%;
+}
+
+.koworking_section_img_text_title {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 130%;
+  margin-bottom: 2%;
+}
+
+.koworking_section_img_text_text {
+  width: 69%;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+  margin-bottom: 2.5%;
+}
+
+
+.koworking_section_img_text_time {
+  display: flex;
+  align-items: center;
+}
+
+.koworking_section_img_text_time_text {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+  margin-left: 10px;
+}
+
+.kowork_section_list {
+  width: 43%;
+  padding: 0 30px 0 2.5%;
+}
+
+.kowork_section_list_ul_title {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 130%;
+  color: var(--black);
+  margin-bottom: 6%;
+}
+
+.kowork_section_list_ul_item {
+  margin-bottom: 37px;
+}
+
+.kowork_section_list_ul_item:last-child {
+  margin-bottom: 0;
+}
+
+.kowork_section_list_link {
+  display: flex;
+  align-items: flex-start;
+}
+
+.kowork_section_list_link_text {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+  color: var(--black);
+  margin-left: 10px;
+}
+
+.kowork_section_list_link_svg {
+  min-width: 24px;
+  min-height: 24px;
+}
+
+.kowork_section_img img {
+  width: 100%;
+}
+
+@media (max-width: 992px) {
+  .kowork_section_img_text {
+    top: 9.5%;
+  }
+
+  .kowork_section_list_ul_title {
+    font-size: 18px;
+  }
+
+  .kowork_section_list_link_text {
+    font-size: 16px;
+  }
+
+  .kowork_section_list_ul_item {
+    margin-bottom: 10px;
+  }
+}
+
+@media (max-width: 720px) {
+  .kowork_section_img,
+  .kowork_section_list {
+    width: 100%;
+  }
+
+  .kowork_section_img {
+    margin-bottom: 30px;
+  }
+
+  .kowork_section_img img {
+    height: 286px;
+  }
+}
+
+@media (max-width: 480px) {
+  .koworking_section_img_text_title {
+    font-size: 18px;
+  }
+
+  .koworking_section_img_text_text {
+    width: 100%;
+  }
+
+  .kowork_section_img_text_line {
+    width: 230px;
+  }
+}

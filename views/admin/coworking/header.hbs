@@ -1,0 +1,33 @@
+<link rel="stylesheet" href="/css/edit_text.css">
+<div class="dash">
+    <form action="/admin/edit/coworking/{{coworking.id}}/title_h1" method="post">
+    <label for="title_h1">Koworking sarlavhasi</label>
+    <input value="{{coworking.title_h1}}" type="text" name="title_h1" id="title_h1" />
+    <button type="submit">send</button>
+</form>
+<br>
+
+<form action="/admin/edit/coworking/{{coworking.id}}/title_left" method="post">
+    <label for="title_left">Ishlash vaqti sarlavhasi</label>
+    <input value="{{coworking.title_left}}" type="text" name="title_left" id="title_left" />
+    <button type="submit">send</button>
+</form>
+
+<form action="/admin/edit/coworking/{{coworking.id}}/title_left_txt" method="post">
+    <label for="title_left_txt">Ishlash vaqti</label>
+    <input value="{{coworking.title_left_txt}}" type="text" name="title_left_txt" id="title_left_txt" />
+    <button type="submit">send</button>
+</form>
+
+<form action="/admin/edit/coworking/{{coworking.id}}/title_right" method="post">
+    <label for="title_right">Koworking narxi sarlavhasi</label>
+    <input value="{{coworking.title_right}}" type="text" name="title_right" id="title_right" />
+    <button type="submit">send</button>
+</form>
+
+<form action="/admin/edit/coworking/{{coworking.id}}/title_right_txt" method="post">
+    <label for="title_right_txt">Koworking narxi</label>
+    <input value="{{coworking.title_right_txt}}" type="text" name="title_right_txt" id="title_right_txt" />
+    <button type="submit">send</button>
+</form>
+</div>

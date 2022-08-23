@@ -1,0 +1,239 @@
+<header class="header">
+  <h1 class="header_title">{{home.header_title}}</h1>
+  <p class="header_desc">{{home.header_desc}}</p>
+  <div class="header_actions">
+    <a href="/courses" class="header_actions_course">{{home.header_actions_course}}</a>
+    <a href="/contact" class="header_actions_register navbar_actions_register">{{home.header_actions_register}}</a>
+  </div>
+</header>
+
+<!-- ====================== main_course_data -->
+<main class="main_course_data">
+  <div class="container-fluid">
+    <div class="main_course_data_info">
+      <div class="main_course_data_info_img">
+        <img src="./img/{{img.main_course_data_info_img}}" alt="main_course_data_img" />
+        <p class="main_course_data_info_num">01</p>
+      </div>
+      <div class="main_course_data_info_txt">
+        <h2>{{home.main_course_data_info_txt_title}}</h2>
+        <p>
+          {{home.main_course_data_info_txt_text}}
+        </p>
+        <a href="/courses">{{home.main_course_data_info_txt_btn}}</a>
+      </div>
+    </div>
+  </div>
+  <div class="main_course_data_techs">
+    <div class="main_course_data_techs_title">
+      <h2>{{home.main_course_data_techs_title}}</h2>
+    </div>
+    <div class="row">
+      {{#each techs}}
+      <div class="main_course_data_techs_item">
+        <img src="{{uploadPath}}/{{img}}" alt="png" />
+        <h4>{{title}}</h4>
+      </div>
+      {{/each}}
+    </div>
+  </div>
+  <div class="programming_steps">
+    <div class="container">
+      <div class="row">
+        <div class="programming_steps_info">
+          <h2>{{home.programming_steps_info_title}}</h2>
+          <ul>
+            {{#each home.programming_steps_info_items}}
+            <li class="steps-item">
+              <div class="steps-item-title">
+                <img src="./img/right-arrow.png" alt="png" />
+                <h6>{{steps_item_title}}</h6>
+              </div>
+              <p>
+                {{steps_item_text}} <br> <b>{{steps_item_text_b}}</b>
+              </p>
+            </li>
+            {{/each}}
+            {{!-- <li class="steps-item">
+              <div class="steps-item-title">
+                <img src="./img/right-arrow.png" alt="png" />
+                <h6>Собираете шесть проектов</h6>
+              </div>
+              <p>
+                Помимо просмотра уроков, вы будете делать практические
+                задания и проекты, которые закрепят ваши знания
+              </p>
+            </li>
+            <li class="steps-item">
+              <div class="steps-item-title">
+                <img src="./img/right-arrow.png" alt="png" />
+                <h6>Устраиваетесь в компанию мечты</h6>
+              </div>
+              <p>
+                После пройденного вами курса вы можете найти работу мечты.
+                Вы будете создавать приложения, сервисы и сайты и получать
+                за это деньги.
+              </p>
+            </li> --}}
+          </ul>
+        </div>
+        <div class="programming_steps_img">
+          <img src="./img/{{img.programming_steps_img}}" alt="img" />
+          <p>02</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="course_about1">
+    <div class="container">
+      <div class="row">
+        <div class="course_about_info">
+          <h2>{{home.course_about_info}}</h2>
+          <ul>
+            {{#each home.course_about_info_items}}
+            <li>
+              <h4>{{course_about_info_itme_title}}</h4>
+              <p>
+                {{course_about_info_itme_text}}
+              </p>
+            </li>
+            {{/each}}
+            {{!-- <li>
+              <h4>0.2 Начинающим веб-разработчикам</h4>
+              <p>
+                У вас будет всё для ускоренного карьерного роста:
+                комплексные знания и опыт работы с продвинутыми
+                инструментами, методологиями и стандартами
+              </p>
+            </li>
+            <li>
+              <h4>0.3 Практикующим IT-специалистам</h4>
+              <p>
+                Подскажем, как перейти в востребованное направление и
+                зарабатывать больше
+              </p>
+            </li> --}}
+          </ul>
+        </div>
+        <div class="course_about_month">
+          <h2>{{home.course_about_month}}</h2>
+          <div class="line"></div>
+          <p>{{home.course_about_month_text}}</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="practices">
+    <div class="container">
+      <div class="row">
+        <div class="practices_info">
+          <h2>
+            <img src="./img/right-arrow.png" alt="png" />
+            {{home.practice_items.0.practices_info_title}}
+          </h2>
+          <p>
+            {{home.practice_items.0.practices_info_text}}
+          </p>
+        </div>
+        <div class="practices_img">
+          <img src="./img/{{img.practices_img}}" alt="img" />
+          <p>03</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="mentor">
+    <div class="container">
+      <div class="row">
+        <div class="mentor_img">
+          <img src="./img/{{img.mentor_img}}" alt="img" />
+          <p>04</p>
+        </div>
+        <div class="mentor_info">
+          <h2>
+            <img src="./img/right-arrow.png" alt="png" />
+            {{home.practice_items.1.practices_info_title}}
+          </h2>
+          <p>
+            {{home.practice_items.1.practices_info_text}}
+          </p>
+          <b>{{home.practice_items.1.mentor_info_b}}</b>
+        </div>
+      </div>
+    </div>
+  </div>
+</main>
+
+{{>contact_form}}
+
+<!-- ====================== reviews -->
+<section class="reviews">
+  <div class="reviews_title">
+    <h2>{{home.reviews_title}}</h2>
+  </div>
+  <div class="container">
+    <div class="reviews_slider">
+      <div class="reviews_slider_btns">
+        <div class="slider-btn-prev">
+          <img src="./img/prev.png" alt="prev" />
+        </div>
+        <div class="slider-btn-next">
+          <img src="./img/prev.png" alt="prev" style="transform: rotate(180deg)" />
+        </div>
+      </div>
+      <div class="reviews_slider_inners">
+        {{#each reviews}}
+        <div class="slider-item">
+          <div class="slider-inner-img">
+            <img src="{{uploadPath}}/{{img}}" alt="img" />
+          </div>
+          <div class="slider-inner-info">
+            <img src="./img/''.png" alt="img" />
+            <p>
+              {{biography}}
+            </p>
+            <strong>{{name}}</strong>
+            <span>{{info}}</span>
+          </div>
+        </div>
+        {{/each}}
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ====================== news -->
+{{!-- <section class="news">
+  <div class="news_title">
+    <h2>{{home.news_title}}</h2>
+  </div>
+  <div class="container-fluid">
+    <div class="news_cards">
+      <div class="news_card card-1">
+        <img src="./img/news1.png" alt="img" />
+        <div class="news_card_info">
+          <strong>{{home.newcard.0.new_card_info_text}}</strong>
+          <span>{{home.newcard.0.new_card_info_time}}</span>
+        </div>
+      </div>
+      <div class="news_card card-2">
+        <img src="./img/news3.jpg" alt="img" />
+        <div class="news_card_info">
+          <strong>{{home.newcard.1.new_card_info_text}}</strong>
+          <span>{{home.newcard.1.new_card_info_time}}</span>
+        </div>
+      </div>
+      <div class="news_card card-3">
+        <img src="./img/news2.jpg" alt="img" />
+        <div class="news_card_info">
+          <strong>{{home.newcard.2.new_card_info_text}}</strong>
+          <span>{{home.newcard.2.new_card_info_time}}</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section> --}}
+
+{{> order_form}}
+
+{{> kowork}}

@@ -1,0 +1,21 @@
+<link rel="stylesheet" href="/css/edit_text.css">
+<div class="dash">
+    <form action="/admin/edit/coworking/{{coworking.id}}/first" method="post">
+    <label for="first">Zayavka formining texti</label>
+    <input value="{{coworking.first}}" type="text" name="first" id="first" />
+    <button type="submit">send</button>
+</form>
+
+<form action="/admin/edit/coworking/{{coworking.id}}/form_submit_btn" method="post">
+    <label for="form_submit_btn">Zayavka formining tugmasi</label>
+    <input value="{{coworking.form_submit_btn}}" type="text" name="form_submit_btn" id="form_submit_btn" />
+    <button type="submit">send</button>
+</form>
+
+<form action="/admin/edit/coworking/{{coworking.id}}/form_info_title_in_no_change" method="post">
+    <label for="form_info_title_in_no_change">Zayavka formining sarlavhasi</label>
+    <input value="{{coworking.form_info_title_in_no_change}}" type="text" name="form_info_title_in_no_change"
+        id="form_info_title_in_no_change" />
+    <button type="submit">send</button>
+</form>
+</div>

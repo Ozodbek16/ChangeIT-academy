@@ -1,0 +1,15 @@
+<link rel="stylesheet" href="/css/edit_text.css">
+<div class="dash">
+    <div class="openlesson">
+        <form action="/admin/edit/contact/{{contact.id}}/open_classes_title" method="post">
+            <label for="open_classes_title">Ochiq darslar sarlavhasi</label>
+            <input type="text" name="open_classes_title" id="open_classes_title" value="{{contact.open_classes_title}}">
+            <button type="submit">send</button>
+        </form>
+        <form action="admin/edit/{{contact.id}}/open_classes_text" method="post">
+            <label for="open_classes_text">Ochiq darslar teksti</label>
+            <input type="text" name="open_classes_text" id="open_classes_text" value="{{contact.open_classes_text}}">
+            <button type="submit">send</button>
+        </form>
+    </div>
+</div>

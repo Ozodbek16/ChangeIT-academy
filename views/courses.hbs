@@ -1,0 +1,27 @@
+<link rel="stylesheet" href="/css/courses.css">
+
+{{#each courses}}
+<section class="course">
+  <div class="container">
+    <div class="row justify_content_between align_items_center">
+      <div class="course_info">
+        <h3 class="course_info_title">{{title}}</h3>
+        <p class="course_info_text">{{description}}</p>
+        <div class="course_buttons align_items_center justify_content_between">
+          <a href="/courses/{{_id}}"><button class="course_btn">о курсе</button></a>
+          <div class="line_inthe_middle"></div>
+          <p class="course_count">Количество мест</p>
+        </div>
+      </div>
+      <div class="course_img">
+        <img src="{{uploadPath}}{{bg}}" alt="" />
+        <span class="course_img_title">{{title}}</span>
+      </div>
+    </div>
+  </div>
+</section>
+{{/each}}
+
+{{> order_form}}
+
+{{> kowork}}

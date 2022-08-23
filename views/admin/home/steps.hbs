@@ -1,0 +1,35 @@
+<link rel="stylesheet" href="/css/edit_text.css">
+<div class="dash">
+    <div class="programming_steps_info_title">
+        <form action="/admin/edit/home/{{home.id}}/programming_steps_info_title" method="post">
+            <label for="programming_steps_info_title">Dasturlash yo'li haqida sarlavhasi</label>
+            <input type="text" name="programming_steps_info_title" id="programming_steps_info_title"
+                value="{{home.programming_steps_info_title}}">
+            <button type="submit">send</button>
+        </form>
+    </div>
+
+
+    <div class="forms">
+        {{#each home.programming_steps_info_items}}
+        <form action="/admin/list/edit/home/{{../home.id}}/programming_steps_info_items/{{id}}" method="post">
+            <label for="steps_item_title">Dasturlash yo'lining qismi haqida sarlavhasi</label>
+            <input value="{{steps_item_title}}" type="text" name="steps_item_title" id="steps_item_title">
+            <label for="steps_item_text">Dasturlash yo'lining qismi haqida teksti</label>
+            <textarea name="steps_item_text" id="steps_item_text" cols="30" rows="10">{{steps_item_text}}</textarea>
+            <label for="steps_item_text_b">Dasturlash yo'lining qismi haqida vaqti</label>
+            <input value="{{steps_item_text_b}}" type="text" name="steps_item_text_b" id="steps_item_text_b">
+            <button type="submit">send</button>
+        </form>
+        {{/each}}
+        {{!-- <form action="/admin/list/edit/home/{{home.id}}/programming_steps_info_items" method="post">
+            <label for="steps_item_title">Dasturlash yo'lining qismi haqida sarlavhasi</label>
+            <input type="text" name="steps_item_title" id="steps_item_title">
+            <label for="steps_item_text">Dasturlash yo'lining qismi haqida teksti</label>
+            <textarea name="steps_item_text" id="steps_item_text" cols="30" rows="10"></textarea>
+            <label for="steps_item_text_b">Dasturlash yo'lining qismi haqida vaqti</label>
+            <input type="text" name="steps_item_text_b" id="steps_item_text_b">
+            <button type="submit">send</button>
+        </form> --}}
+    </div>
+</div>

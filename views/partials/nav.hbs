@@ -1,0 +1,61 @@
+<nav class="navbar">
+  <div class="navbar_media">
+    <a href="/" class="logo">
+      <img src="/img/logo_icon.png" alt="logo" />
+    </a>
+    <div class="navbar_media_actions">
+      <button type="button" class="navbar-toggle">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+    </div>
+  </div>
+  <div class="row">
+    <div class="navbar_phone">
+      <a href="tel:{{nav.number}}">{{nav.number}}</a>
+    </div>
+    <div class="navbar_menu">
+      <ul>
+        <li>
+          <a href="/courses">{{nav.courses}}</a>
+        </li>
+        <li>
+          <a href="/lessons">{{nav.open_lessons}}</a>
+        </li>
+        <li class="logo_list_item">
+          <a href="/" class="logo">
+            <img src="/img/logo_icon.png" alt="logo" />
+          </a>
+        </li>
+        <li>
+          <a href="/coworking">{{nav.coworking}}</a>
+        </li>
+        <li>
+          <a href="/contact">{{nav.contacts}}</a>
+        </li>
+      </ul>
+    </div>
+    <div class="navbar_actions_register">
+      <button>{{nav.request}}</button>
+    </div>
+  </div>
+  </div>
+</nav>
+
+<div class="modal_sign" style="display: none">
+  <img class="close" src="/img/close.svg" alt="" />
+  <button class="close_btn"></button>
+  <div class="modal_sign_in">
+    <h3>{{contact.right_form_form_title}}</h3>
+    <p>{{contact.right_form_form_text}}</p>
+    <form class="modal_form" action="#!" method="post">
+      <input type="text" name="name" placeholder="{{contact.right_form_form_name_input}}" required />
+      <input type="number" name="phone" maxlength="13" maxlength="8"
+        placeholder="{{contact.right_form_form_phone_input}}" required />
+      <button>{{contact.right_form_form_btn}}</button>
+    </form>
+  </div>
+</div>
+
+<script src="/script/navbar.js"></script>

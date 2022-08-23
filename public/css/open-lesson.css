@@ -1,0 +1,425 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  list-style: none;
+  box-sizing: border-box;
+  background-repeat: no-repeat;
+}
+
+body {
+  position: relative;
+  /* filter: blur(3px); */
+}
+
+header {
+  height: 428px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 0;
+}
+
+.title {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.bottom {
+  display: flex;
+  width: 675px;
+  justify-content: space-between;
+}
+
+header .title h1 {
+  margin-top: 83px;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 46px;
+  line-height: 125%;
+  text-align: center;
+  color: #ffffff;
+}
+
+header .title .bottom {
+  margin-top: 31px;
+}
+
+header .title .bottom p {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+  text-align: center;
+  color: #ffffff;
+}
+
+.line1 {
+  margin-top: 28px;
+  width: 182px;
+  height: 0.4px;
+  background: #ffffff;
+}
+
+.card {
+  width: 440px;
+  height: 290px;
+  display: flex;
+  align-items: flex-end;
+  overflow: hidden;
+  position: relative;
+}
+
+.all_cards {
+  width: 1380px;
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+.one_section {
+  padding-top: 20px;
+  padding-bottom: 60px;
+}
+
+.card_botom {
+  height: 93px;
+  width: 100%;
+  padding: 20px;
+  border-top: 1px solid rgba(255, 255, 255, 0.4);
+}
+
+.card_botom_title p {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 150%;
+  color: #ffffff;
+}
+
+.card_botom_title span {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+  color: #ffffff;
+  display: block;
+  margin-top: 9px;
+}
+
+.card_hover {
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  padding: 79px 20px;
+  position: absolute;
+  top: -100%;
+  transition: 0.5s;
+}
+
+.card:hover .card_hover {
+  top: 0%;
+  transition: 0.5s;
+}
+
+.card_hover_title {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 150%;
+  color: #ffffff;
+}
+
+.card_hover_date {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+  color: #ffffff;
+  margin-top: 9px;
+  margin-bottom: 26px;
+}
+
+.card_hover button {
+  display: block;
+  padding: 15px 41px;
+  background: #fff;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 150%;
+  text-align: center;
+  text-transform: uppercase;
+  color: #242424;
+  border: none;
+  cursor: pointer;
+}
+
+.total {
+  position: absolute;
+  top: 23px;
+  background: #242424;
+  padding: 14px 26.5px;
+  z-index: 2;
+}
+
+.total p {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 13px;
+  line-height: 130%;
+  text-align: center;
+  color: #ffffff;
+}
+
+.modal_sign {
+  position: fixed;
+  top: 0;
+  height: 100vh;
+  z-index: 6;
+  width: 100%;
+  backdrop-filter: blur(5px);
+  background-repeat: no-repeat;
+  background-size: cover;
+  transition: 0.5s;
+  background: #0000004b;
+  animation: fadein 0.2s;
+}
+
+.modal_sign_in_title {
+  z-index: 3;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.close_btn {
+  background: transparent;
+  border: none;
+  width: 100vw;
+  height: 100vh;
+  z-index: 1;
+  display: inline-block;
+}
+
+@keyframes fadein {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+.modal_sign_in {
+  display: flex;
+  flex-direction: column;
+  background: #fff;
+  width: 910px;
+  align-items: center;
+  justify-content: center;
+  height: 553px;
+  margin: auto;
+  z-index: 3;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
+}
+
+.modal_sign_in h3 {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 32px;
+  line-height: 150%;
+  text-align: center;
+  color: #242424;
+}
+
+.modal_sign_in p {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+  text-align: center;
+  color: #a3a3a3;
+  margin-top: 10px;
+  margin-bottom: 25px;
+}
+
+.modal_sign_in form {
+  display: flex;
+  flex-direction: column;
+  width: 557px;
+  height: 190px;
+  justify-content: space-between;
+}
+
+.modal_sign_in form input {
+  padding: 13px 17px;
+  border: 1px solid #cecece;
+}
+
+.modal_sign_in form button {
+  padding: 13px 0;
+  background: #242424;
+  border: none;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+  text-align: center;
+  color: #ffffff;
+  cursor: pointer;
+}
+
+input:focus {
+  outline: none;
+}
+
+.modal_sign_in form input::placeholder {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+  color: #818181;
+}
+
+.close {
+  position: absolute;
+  right: 50px;
+  top: 50px;
+  cursor: pointer;
+}
+
+@media (max-width: 1380px) {
+  header .title h1 {
+    font-size: 18px;
+    line-height: 125%;
+    margin-top: 60px;
+  }
+
+  .line1 {
+    margin-top: 20px;
+  }
+
+  header .title .bottom {
+    margin-top: 20px;
+    width: 335px;
+  }
+
+  header .title .bottom p {
+    font-size: 14px;
+    line-height: 150%;
+  }
+
+  header {
+    background: url(/img/760headerOpen.png) !important;
+    height: 379px;
+    background-repeat: no-repeat !important;
+    background-size: 100% !important;
+  }
+
+  .card .card_hover {
+    top: 0%;
+    padding: 70px 10px;
+  }
+
+  .all_cards {
+    width: 700px;
+  }
+
+  .one_section {
+    padding-top: 0;
+  }
+
+  .card {
+    width: 335px;
+    height: 234px;
+  }
+
+  .card_botom {
+    padding: 15px;
+  }
+
+  .card_hover_title {
+    font-size: 16px;
+    line-height: 150%;
+    width: 290px;
+  }
+
+  .card_hover_date {
+    margin-top: 5px;
+    margin-bottom: 20px;
+  }
+
+  .card_hover button {
+    font-size: 12px;
+    line-height: 150%;
+    padding: 14px 31px;
+  }
+
+  .close {
+    right: 30px;
+  }
+
+  .modal_sign_in {
+    width: 700px;
+    height: 470px;
+  }
+}
+
+@media (max-width: 699px) {
+  header {
+    background: url(/img/320headerOpen.png) !important;
+  }
+
+  header .title .bottom {
+    width: 300px;
+  }
+
+  .all_cards {
+    width: 100%;
+    justify-content: center;
+  }
+
+  .modal_sign_in {
+    width: 100%;
+    height: max-content;
+    padding: 20px 0;
+  }
+
+  .modal_sign_in form {
+    width: 100%;
+    padding-right: 10px;
+    padding-left: 10px;
+  }
+
+  .close {
+    top: 20px;
+    right: 20px;
+    width: 20px;
+    height: 20px;
+  }
+
+  .card {
+    margin-top: 0px;
+  }
+}

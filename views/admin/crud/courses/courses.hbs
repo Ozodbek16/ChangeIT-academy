@@ -1,0 +1,113 @@
+<div class="crud_main">
+    <div class="crud">
+        {{#each courses}}
+        <div class="crud_item">
+            <img src="{{uploadPath}}{{bg}}" alt="img not found">
+            <h2>{{title}}</h2>
+            <p>{{description}}</p>
+            <a href="/admin/crud/courses/delete/{{_id}}">Delete</a>
+        </div>
+        {{/each}}
+    </div>
+
+    <form class="crud_form" action="/admin/crud/courses/addNew" method="post" enctype="multipart/form-data">
+        <h2>Add new</h2>
+        <label for="bg">Background Image</label>
+        <input type="file" name="bg" id="bg" required>
+        <br>
+
+        <label for="img">Image</label>
+        <input type="file" name="img" id="img" required>
+        <br>
+
+        <label for="title">Title</label>
+        <input type="text" name="title" id="title" required>
+        <br>
+
+        <label for="description">Description</label>
+        <input type="text" name="description" id="description" required>
+        <br>
+
+        <label for="duration">Duration</label>
+        <input type="text" name="duration" id="duration" required>
+        <br>
+
+        <label for="format">Format</label>
+        <select name="format" id="format">
+            <option value="Online">Online</option>
+            <option value="Offline">Offline</option>
+        </select>
+        <br>
+
+        <label for="price">Price</label>
+        <input type="number" name="price" id="price" placeholder="UZS" required>
+        <br>
+
+        <div class="for">
+            <h2>Who is the course for?</h2>
+            <ul class="for_list">
+                <li class="for_item">
+                    <label for="for">Title</label>
+                    <input type="text" name="for_title" id="for" required>
+                    <br>
+                    <label for="for">Description</label>
+                    <input type="text" name="for_description" id="for" required>
+                    <br>
+                    <button type="button" class="for_remove">Remove</button>
+                </li>
+            </ul>
+            <button type="button" class="for_add">Add</button>
+        </div>
+
+        <div class="learns">
+            <h2>What will you learn?</h2>
+            <ul class="learn_list">
+                <li class="learn_item">
+                    <label for="learn">Image</label>
+                    <input type="file" name="learns_img" id="learn" required>
+                    <br>
+
+                    <label for="for">Title</label>
+                    <input type="text" name="learns_title" id="for" required>
+                    <br>
+
+                    <label for="for">Description</label>
+                    <input type="text" name="learns_description" id="for" required>
+                    <br>
+
+                    <button type="button" class="learn_remove">Remove</button>
+                </li>
+            </ul>
+            <button type="button" class="learn_add">Add</button>
+        </div>
+
+        <label for="salary">Salary</label>
+        <input type="text" name="salary" id="salary" required>
+        <br>
+
+        <label for="salary_info">Salary info</label>
+        <input type="text" name="salary_info" id="salary_info" required>
+        <br>
+
+        <label for="salary_desc">Salary description</label>
+        <input type="text" name="salary_desc" id="salary_desc" required>
+        <br>
+
+        <div class="program">
+            Course program
+            <ul class="program_list">
+                <li class="program_item">
+                    <label for="program">Program item</label>
+                    <input type="text" name="program" id="program" required>
+                    <br>
+                    <button type="button" class="program_remove">Remove</button>
+                </li>
+            </ul>
+            <button type="button" class="program_add">Add</button>
+        </div>
+
+        <button type="submit">Send</button>
+    </form>
+</div>
+
+<script src="/script/admin.js"></script>

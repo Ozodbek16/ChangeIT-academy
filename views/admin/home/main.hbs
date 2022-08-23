@@ -1,0 +1,22 @@
+<link rel="stylesheet" href="/css/edit_text.css">
+<div class="dash">
+    <div class="main">
+        <form action="/admin/edit/home/{{home.id}}/main_course_data_info_txt_title" method="post">
+        <label for="main_course_data_info_txt_title">Veb dasturlsh haqidagi sarlavha</label>
+        <input value="{{home.main_course_data_info_txt_title}}" type="text" name="main_course_data_info_txt_title"
+            id="main_course_data_info_txt_title">
+            <button type="submit">send</button>
+        </form><form action="/admin/edit/home/{{home.id}}/main_course_data_info_txt_text" method="post">
+        <label for="main_course_data_info_txt_text">Veb dasturlash haqidagi tekst</label>
+        <textarea name="main_course_data_info_txt_text" id="main_course_data_info_txt_text" cols="30"
+            rows="10">{{home.main_course_data_info_txt_text}}</textarea>
+            <button type="submit">send</button>
+        </form><form action="/admin/edit/home/{{home.id}}/main_course_data_info_txt_btn" method="post">
+        <label for="main_course_data_info_txt_btn">Veb dasturlash haqidagi tugma</label>
+        <input value="{{home.main_course_data_info_txt_btn}}" type="text" name="main_course_data_info_txt_btn"
+            id="main_course_data_info_txt_btn">
+            <button type="submit">send</button>
+        </form>
+        
+    </div>
+</div>

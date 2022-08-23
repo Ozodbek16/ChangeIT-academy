@@ -1,0 +1,36 @@
+input[type="file"] {
+    display: none;
+}
+
+.all_forms_img {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    gap: 10px;
+    flex-direction: column;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+form img {
+    height: 150px;
+}
+
+.home {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+}
+
+button {
+    border: none;
+    padding: 5px 0px;
+    background: #343a40;
+    color: white;
+}

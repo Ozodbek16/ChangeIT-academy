@@ -1,0 +1,27 @@
+<link rel="stylesheet" href="/css/edit_text.css">
+<div class="dash">
+    <div class="header">
+        <form action="/admin/edit/home/{{home.id}}/header_title" method="post">
+            <label for="header_title">Sarlavha</label>
+            <input value="{{home.header_title}}" type="text" name="header_title" id="header_title">
+            <button type="submit">send</button>
+        </form>
+        <form action="/admin/edit/home/{{home.id}}/header_desc" method="post">
+            <label for="header_desc">Sarlavha tagi</label>
+            <input value="{{home.header_desc}}" type="text" name="header_desc" id="header_desc">
+            <button type="submit">send</button>
+        </form>
+        <form action="/admin/edit/home/{{home.id}}/header_actions_course" method="post">
+        <label for="header_actions_course">Kurs haqida tugmasi</label>
+        <input value="{{home.header_actions_course}}" type="text" name="header_actions_course"
+            id="header_actions_course">
+            <button type="submit">send</button>
+        </form>
+        <form action="/admin/edit/home/{{home.id}}/header_actions_register" method="post">
+        <label for="header_actions_register">So'rovnoma tugmasi</label>
+        <input value="{{home.header_actions_register}}" type="text" name="header_actions_register"
+            id="header_actions_register">
+            <button type="submit">send</button>
+        </form>
+    </div>
+</div>

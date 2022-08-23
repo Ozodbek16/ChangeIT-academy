@@ -1,0 +1,33 @@
+<link rel="stylesheet" href="/css/edit_text.css">
+<div class="dash">
+    <div class="contacts">
+    <form action="/admin/edit/contact/{{contact.id}}/coworking_left_title" method="post">
+        <label for="coworking_left_title">Kontaktlardagi Kworking haqida belgilangan joyda Sarlavha</label>
+    <input value="{{contact.coworking_left_title}}" type="text" name="coworking_left_title" id="coworking_left_title">
+        <button type="submit">send</button>
+    </form>
+    <form action="/admin/edit/contact/{{contact.id}}/coworking_left_text" method="post">
+        <label for="coworking_left_text">Kontaktlardagi Kworking haqida belgilangan joyda teksti</label>
+    <input value="{{contact.coworking_left_text}}" type="text" name="coworking_left_text" id="coworking_left_text">
+        <button type="submit">send</button>
+    </form>
+    <form action="/admin/edit/contact/{{contact.id}}/coworking_left_time" method="post">
+         <label for="coworking_left_time">Kontaktlardagi Kworking haqida belgilangan joyda vaqti</label>
+    <input value="{{contact.coworking_left_time}}" type="text" name="coworking_left_time" id="coworking_left_time">
+        <button type="submit">send</button>
+    </form>
+    <form action="/admin/edit/contact/{{contact.id}}/coworking_right_title" method="post">
+            <label for="coworking_right_title">Kontaktlardagi Kworking haqida belgilangan joyda o'ngdagi Sarlavha</label>
+    <input value="{{contact.coworking_right_title}}" type="text" name="coworking_right_title" id="coworking_right_title">
+        <button type="submit">send</button>
+    </form>
+    {{#each contact.coworking_right_list_items}}
+    <form action="/admin/contact/list/edit/{{../contact.id}}/coworking_right_list_items/{{id}}" method="post">
+        <label for="coworking_right_item_text">Kontaktlardagi Kworking haqida belgilangan joyda o'ngdagi text</label>
+    <input value="{{coworking_right_item_text}}" type="text" name="coworking_right_item_text" id="coworking_right_item_text">
+        <button type="submit">send</button>
+    </form>   
+    {{/each}}
+    
+</div>
+</div>

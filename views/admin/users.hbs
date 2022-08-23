@@ -1,0 +1,20 @@
+<link rel="stylesheet" href="/css/users.css">
+<div class="center">
+    {{#if users}}
+    <table>
+        <tr>
+            <th>Ism</th>
+            <th>Telefon raqami</th>
+        </tr>
+        {{#each users}}
+        <tr>
+            <td>{{name}}</td>
+            <td><span>{{phone}} </span><a href="/contact/user-contact/del/{{id}}"><img src="/img/delete-icon.svg"
+                        alt=""></a></td>
+        </tr>
+        {{/each}}
+    </table>
+    {{else}}
+    <h2>Hali hech kim yo'q</h2>
+    {{/if}}
+</div>

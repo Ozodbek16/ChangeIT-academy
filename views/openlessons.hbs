@@ -1,0 +1,54 @@
+<link rel="stylesheet" href="/css/open-lesson.css">
+
+<header style="
+        background: url(/img/Rectangle1.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+      ">
+  <div class="title">
+    <h1>{{contact.open_classes_title}}</h1>
+    <div class="line1"></div>
+    <div class="bottom">
+      <p>
+       {{contact.open_classes_text}}
+      </p>
+    </div>
+  </div>
+</header>
+<section class="one_section">
+  <div class="all_cards">
+    {{#each lessons}}
+    <div class="card" style="background: url(/img/Rectangle23.png)">
+      <input type="hidden" class="cart_inp_hide" value="/id" />
+      <div class="card_botom">
+        <div class="card_botom_title">
+          <p>{{title}}</p>
+          <span>{{date}}</span>
+        </div>
+      </div>
+      <div class="card_hover" style="background: url(/img/Rectangle24.png)">
+        <p class="card_hover_title">{{title}}</p>
+        <p class="card_hover_date">{{date}}</p>
+        <button>Записаться</button>
+      </div>
+    </div>
+    {{/each}}
+  </div>
+</section>
+
+<div class="modal_sign" style="display: none">
+  <img class="close" src="/img/close.svg" alt="" />
+  <button class="close_btn"></button>
+  <div class="modal_sign_in">
+    <h3>Записаться на открытый урок</h3>
+    <p>Заполните все необходимые поля ниже</p>
+    <form method="post" class="modal_form" action="/contact/user-contact">
+      <input type="text" name="name" placeholder="Имя" required />
+      <input type="tel" name="phone" maxlength="13"  
+ maxlength="8" placeholder="Номер телефона" required />
+      <button>Записаться</button>
+    </form>
+  </div>
+</div>
+
+<script src="/script/modal.js"></script>

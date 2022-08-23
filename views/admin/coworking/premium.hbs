@@ -1,0 +1,33 @@
+<link rel="stylesheet" href="/css/edit_text.css">
+<link rel="stylesheet" href="/css/admin.css">
+<div class="dash">
+    <form action="/admin/edit/coworking/{{coworking.id}}/all_title_h3" method="post">
+    <label for="all_title_h3">Bizning afzalligimiz haqida listning sarlavhasi</label>
+    <input value="{{coworking.all_title_h3}}" type="text" name="all_title_h3" id="all_title_h3" />
+    <button type="submit">send</button>
+</form>
+
+<div class="forms">
+  {{#each coworking.premium_botom}}
+  <form action="/admin/coworking/list/delete/{{../coworking.id}}/{{@index}}" method="post">
+  <label for="premium_botom">Afzalliklar</label>
+  <input type="text" name="premium" id="premium_botom" value="{{.}}">
+  <button type="submit" style="background-color: red;">delete</button>
+  </form>
+{{/each}}
+</div>
+
+
+<form
+    action="/admin/coworking/list/edit/{{coworking.id}}/premium_botom"
+    method="post"
+  >
+    <label for="premium_botom">Bizning afzalliklarimiz</label>
+    <input
+      type="text"
+      name="premium_botom"
+      id="premium_botom"
+    />
+    <button type="submit">send</button>
+</form>
+</div>

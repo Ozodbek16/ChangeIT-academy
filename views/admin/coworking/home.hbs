@@ -1,0 +1,21 @@
+<link rel="stylesheet" href="/css/edit_text.css">
+<div class="dash">
+
+<form action="/admin/edit/coworking/{{coworking.id}}/home_right_button" method="post">
+    <label for="home_right_button">Koworking haqida malumot tugmasi</label>
+    <input value="{{coworking.home_right_button}}" type="text" name="home_right_button" id="home_right_button" />
+    <button type="submit">send</button>
+</form>
+
+<form action="/admin/edit/coworking/{{coworking.id}}/home_right_h3" method="post">
+    <label for="home_right_h3">Koworking haqida malumot sarlavhasi</label>
+    <input value="{{coworking.home_right_h3}}" type="text" name="home_right_h3" id="home_right_h3" />
+    <button type="submit">send</button>
+</form>
+
+<form action="/admin/edit/coworking/{{coworking.id}}/home_right_p" method="post">
+    <label for="home_right_p">Koworking haqida malumot teksti</label>
+    <input value="{{coworking.home_right_p}}" type="text" name="home_right_p" id="home_right_p" />
+    <button type="submit">send</button>
+</form>
+</div>

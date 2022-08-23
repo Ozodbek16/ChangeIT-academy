@@ -1,0 +1,75 @@
+{{!-- <link rel="stylesheet" href="/css/kowork.css">
+
+<section class="kowork_section">
+    <div class="container-fluid plus_padding">
+        <div class="row justify_content_between align_items_center">
+            <div class="kowork_section_img">
+                <img src="/img/Rectangle 33.jpg" alt="" />
+                <div class="kowork_section_img_text">
+                    <hr class="kowork_section_img_text_line" />
+                    <h3 class="koworking_section_img_text_title">{{coworking.home_right_h3}}</h3>
+                    <p class="koworking_section_img_text_text">{{coworking.home_right_p}}</p>
+                    <div class="koworking_section_img_text_time">
+                        <svg width="16" class="koworking_section_img_text_time_img" fill="none" height="16"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M8 15C11.866 15 15 11.866 15 8C15 4.13401 11.866 1 8 1C4.13401 1 1 4.13401 1 8C1 11.866 4.13401 15 8 15Z"
+                                stroke="white" stroke-linecap="round" stroke-linejoin="round"></path>
+                            <path d="M8 4V8L10 10" stroke="white" stroke-linecap="round" stroke-linejoin="round"></path>
+                        </svg>
+                        <p class="koworking_section_img_text_time_text">{{coworking.title_left_txt}}</p>
+                    </div>
+                </div>
+            </div>
+            <div class="kowork_section_list">
+                <ul class="kowork_section_list_ul">
+                    <li class="kowork_section_list_ul_title">{{coworking.all_title_h3}}</li>
+                    {{#each coworking.premium_botom}}
+                    <li class="kowork_section_list_ul_item">
+                        <a href="#!" class="kowork_section_list_link">
+                            <svg width="24" height="24" class="kowork_section_list_link_svg" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M12.0117 0.751984C5.79853 0.751984 0.761719 5.78875 0.761719 12.002C0.761719 18.2152 5.79853 23.252 12.0117 23.252C18.2249 23.252 23.2617 18.2152 23.2617 12.002C23.2617 5.7888 18.225 0.751984 12.0117 0.751984ZM18.906 18.8963C17.1964 20.6006 14.9136 21.6075 12.5022 21.7206C10.0908 21.8337 7.72372 21.0451 5.8621 19.5082C4.00048 17.9714 2.7777 15.7965 2.43204 13.4074C2.08638 11.0183 2.64259 8.58599 3.99229 6.58455C5.34199 4.5831 7.3885 3.15585 9.73305 2.58089C12.0776 2.00594 14.5522 2.32446 16.6748 3.4744C18.7973 4.62435 20.4156 6.52333 21.2145 8.80133C22.0134 11.0793 21.9355 13.5732 20.9961 15.7969C20.5065 16.9555 19.7967 18.0081 18.906 18.8963Z"
+                                    fill="#242424"></path>
+                                <path
+                                    d="M11.233 7.73377L14.7511 11.2519H6.00641V12.7519H14.7511L11.233 16.2701L12.2936 17.3307L17.6224 12.0019L12.2936 6.67313L11.233 7.73377Z"
+                                    fill="#242424"></path>
+                            </svg>
+                            <span class="kowork_section_list_link_text">{{.}}</span>
+                        </a>
+                    </li>
+                    {{/each}}
+                </ul>
+            </div>
+        </div>
+    </div>
+</section> --}}
+
+<link rel="stylesheet" href="/css/req.css" />
+
+<section class="coworking">
+  <div class="coworking_container">
+    <div
+      class="coworking_left"
+      style="background: url('/img/Rectangle 33.jpg');"
+    >
+      <div class="coworking_line"></div>
+      <h3>{{contact.coworking_left_title}}</h3>
+      <p>{{contact.coworking_left_text}}</p>
+      <div class="coworking_date">
+        <img src="/img/clock.png" alt="img" />
+        <span>{{contact.coworking_left_time}}</span>
+      </div>
+    </div>
+    <div class="coworking_right">
+      <h3>{{contact.coworking_right_title}}</h3>
+      {{#each contact.coworking_right_list_items}}
+        <div class="coworking_right_item">
+          <img src="/img/arrowWhite.png" alt="" />
+          <p>{{coworking_right_item_text}}</p>
+        </div>
+      {{/each}}
+    </div>
+  </div>
+</section>

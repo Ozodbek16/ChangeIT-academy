@@ -1,0 +1,24 @@
+<link rel="stylesheet" href="/css/edit_text.css">
+<link rel="stylesheet" href="/css/admin.css">
+<div class="dash">
+    <div class="practices">
+        
+        <div class="forms">
+            {{#each home.practice_items}}
+        <form action="/admin/list/edit/home/{{../home.id}}/practice_items/{{id}}" method="post">
+         <div class="practice_items">
+            <label for="practices_info_title">Praktika Haqida sarlavhasi</label>
+            <input value="{{practices_info_title}}" type="text" name="practices_info_title"
+                id="practices_info_title">
+            <label for="practices_info_text">Praktika haqida tekst</label>
+            <textarea name="practices_info_text" id="practices_info_text" cols="30" rows="10">{{practices_info_text}}</textarea>
+            <label for="mentor_info_b">Mentorlar haqida tekst</label>
+            <input value="{{mentor_info_b}}" type="text" name="mentor_info_b" id="mentor_info_b">
+            <button type="submit">send</button>
+        </div>
+        </form>
+        {{/each}}
+        </div>
+        
+    </div>
+</div>

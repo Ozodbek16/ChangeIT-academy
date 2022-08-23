@@ -1,0 +1,14 @@
+.container {
+  width: 1142px;
+  margin: auto;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  margin: auto;
+}
+
+.container-fluid {
+  margin: auto;
+}

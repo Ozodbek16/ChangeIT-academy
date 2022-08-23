@@ -1,0 +1,18 @@
+<link rel="stylesheet" href="/css/links.css">
+<div class="all-forms">
+    <form action="/admin/links/edit/telegram" method="post">
+        <label for="one">Telegram</label>
+        <input type="text" name="telegram" value="{{link.telegram}}" required id="one" placeholder="telegram link">
+        <button>Send</button>
+    </form>
+    <form action="/admin/links/edit/instagram" method="post">
+        <label for="two">Instagram</label>
+        <input type="text" name="instagram" value="{{link.instagram}}" id="two" required placeholder="instagram link">
+        <button>Send</button>
+    </form>
+    <form action="/admin/links/edit/facebook" method="post">
+        <label for="three">Facebook</label>
+        <input type="text" name="facebook" required id="three" value="{{link.facebook}}" placeholder="telegram link">
+        <button>Send</button>
+    </form>
+</div>

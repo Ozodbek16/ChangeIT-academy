@@ -1,0 +1,33 @@
+<div class="crud_main">
+    <div class="crud">
+        {{#each reviews}}
+        <div class="crud_item">
+            <img src="{{uploadPath}}{{img}}" alt="img not found">
+            <h2>{{name}}</h2>
+            <p>{{biography}}</p>
+            <p>{{info}}</p>
+            <a href="/admin/crud/reviews/delete/{{_id}}">Delete</a>
+        </div>
+        {{/each}}
+    </div>
+
+    <form class="crud_form" action="/admin/crud/reviews/addNew" method="post" enctype="multipart/form-data">
+        <h2>Add new</h2>
+        <label for="file">Image</label>
+        <input type="file" name="img" id="file" required>
+        <br>
+
+        <label for="name">Name</label>
+        <input type="text" name="name" id="name" required>
+        <br>
+
+        <label for="biography">Biography</label>
+        <input type="text" name="biography" id="biography" required>
+        <br>
+
+        <label for="info">Info</label>
+        <input type="text" name="info" id="info" required>
+        <br>
+        <button type="submit">Send</button>
+    </form>
+</div>

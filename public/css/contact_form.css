@@ -1,0 +1,197 @@
+.form2 {
+    background: #242424;
+    padding-top: 60px;
+    padding-bottom: 73px;
+    margin-top: 50px;
+}
+
+.form2_info_title_in {
+    display: flex;
+}
+
+.form2_container {
+    width: 1340px;
+    display: flex;
+    margin: auto;
+    justify-content: space-between;
+}
+
+.form2_info_title_in p {
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 130%;
+    color: #ffffff;
+    margin-left: 10px;
+}
+
+.form2_info_title span {
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+    color: #ffffff;
+    display: block;
+    width: 419px;
+    margin-top: 13px;
+}
+
+.form2_container form {
+    width: 910px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.form2_container form input {
+    width: 323px;
+    height: 50px;
+    border: 1px solid #fdfdfd;
+    background: transparent;
+    padding: 17px 16px;
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+    color: #fdfdfd;
+}
+
+.form2_container form input::placeholder {
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+    color: #fdfdfd;
+}
+
+.form2_container form input:focus {
+    outline: none;
+}
+
+.form2_container form button {
+    background: #fdfdfd;
+    padding: 13px 62px;
+    border: none;
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+    color: #242424;
+}
+
+.form2_info_title_in_change {
+    display: none;
+}
+
+.second {
+    display: none !important;
+}
+
+.first {
+    display: block !important;
+}
+
+@media (max-width: 1360px) {
+    .form2_info_title_in_change {
+        display: block;
+    }
+
+    .form2_info_title_in p {
+        font-size: 18px;
+        line-height: 130%;
+        font-weight: 500;
+    }
+
+    .form2_container {
+        flex-direction: column;
+        align-items: center;
+        max-width: 456px;
+    }
+
+    .form2_container form {
+        flex-direction: column;
+        align-items: center;
+        max-width: 456px;
+    }
+
+    .form2_container form input {
+        display: block;
+        width: 100%;
+        margin-top: 20px;
+    }
+
+    .form2_container form button {
+        display: block;
+        width: 100%;
+        margin-top: 20px;
+    }
+
+    .form2_info_title span {
+        font-size: 16px;
+        line-height: 150%;
+        text-align: center;
+        margin-bottom: 5px;
+        margin-top: 15px;
+    }
+
+    .form2_info_title_in {
+        width: max-content;
+        margin: auto;
+    }
+
+    .form2 {
+        margin-top: 37px;
+        padding-top: 40px;
+        padding-bottom: 50px;
+    }
+}
+
+
+@media (max-width: 715px) {
+    .form2 {
+        margin-top: 27px;
+        padding-bottom: 48px;
+        padding-top: 32px;
+    }
+
+    .form2_container {
+        width: 300px;
+    }
+
+    .form2_container form {
+        width: 300px;
+    }
+
+    .form2_info_title span {
+        width: 300px;
+        text-align: left;
+    }
+
+    .form2_info_title_in p {
+        font-size: 18px;
+        line-height: 130%;
+        font-weight: 500;
+        margin-left: 5px;
+    }
+
+    .form2_info_title_in {
+        margin: 0;
+    }
+
+    .form2_info_title_in img {
+        width: 18px;
+    }
+
+    .form2_container form input {
+        margin-top: 15px;
+    }
+
+    .form2_container form button {
+        margin-top: 17px;
+    }
+}

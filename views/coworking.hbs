@@ -1,0 +1,51 @@
+<link rel="stylesheet" href="/css/coworking.css" />
+
+<header>
+  <div class="title">
+    <h1>{{coworking.title_h1}}</h1>
+    <div class="bottom">
+      <div class="left">
+        <span>{{coworking.title_left}}</span>
+        <p>{{coworking.title_left_txt}}</p>
+      </div>
+      <div class="line"></div>
+      <div class="right">
+        <span>{{coworking.title_right}}</span>
+        <p>{{coworking.title_right_txt}}</p>
+      </div>
+    </div>
+  </div>
+</header>
+
+<section class="home">
+  <div class="home_container">
+    <div class="home_left">
+      <img src="./img/Rectangle 27.png" class="home_left_first_img" />
+      <img src="./img/{{img.coworking_left}}" class="home_left_second_img" />
+      <img src="/img/760secondImg.png" class="home_left_second_img760" />
+    </div>
+    <div class="home_right">
+      <h3>{{coworking.home_right_h3}}</h3>
+      <p>
+        {{coworking.home_right_p}}
+      </p>
+      <button><a href="#!">{{coworking.home_right_button}}</a></button>
+    </div>
+  </div>
+</section>
+
+<section class="premium">
+  <h3 class="all_title_h3">{{coworking.all_title_h3}}</h3>
+  <div class="premium_botom">
+    {{#each coworking.premium_botom}}
+    <div class="premium_botom_item">
+      <div class="premium_botom_item_img">
+        <img src="./img/rightArrow.svg" alt="" />
+      </div>
+      <p>{{this}}</p>
+    </div>
+    {{/each}}
+  </div>
+</section>
+
+{{>contact_form}}
